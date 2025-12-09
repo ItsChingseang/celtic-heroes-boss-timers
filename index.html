@@ -186,7 +186,7 @@
   </div>
 
   <!-- Your spawn sound file – must exist as spawn.mp3 in the same folder -->
-  <audio id="Stonefang" src="Stonefang.mp3" preload="auto"></audio>
+  <audio id="spawnsound" src="ABossSpawned.mp3" preload="auto"></audio>
 
   <script>
     // --- CONFIGURABLE BOSS LIST ------------------------------------
@@ -300,7 +300,7 @@
 
     // --- SOUND USING spawn.mp3 --------------------------------------
     function playSpawnSound() {
-      const audio = document.getElementById("Stonefang");
+      const audio = document.getElementById("spawnsound");
       if (!audio) return;
 
       audio.currentTime = 0;
@@ -545,6 +545,7 @@
   </script>
 </body>
 </html>
+
 
 
 
